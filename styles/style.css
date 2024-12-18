@@ -75,6 +75,11 @@
   line-height: 95.7px;
   text-align: left;
   text-shadow: 4px 4px 0px var(--accent-color);
+  margin-inline-start: 10px;
+  
+}
+.header_block_text{
+  margin-inline:10px;
 }
 .main {
   padding-inline-start: var(--low-padding);
@@ -108,6 +113,9 @@
 .section_why {
   padding-block-start: 40px;
   padding-block-end: 50px;
+}
+.section_why .title_main{
+  margin-block-end: var(--low-padding);
 }
 .title-decor {
   color: var(--text-color);
@@ -146,10 +154,11 @@
   margin-block-end: var(--low-padding);
   margin-block-start: var(--big-padding);
 }
+h4:first-child{
+  margin: 0;
+}
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  max-height: 1366px;
 }
 .gallery__item {
   box-sizing: border-box;
