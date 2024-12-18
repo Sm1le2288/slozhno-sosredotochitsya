@@ -5,4 +5,8 @@
 :root {
   --accent-color: #ff0070;
   --title-color:#000028;
+  --low-padding:0.625em;
+  --big-padding:1.25em;
+  --text-color:#F1B2CE;
+  --color-title:#DB00FF;
 }
