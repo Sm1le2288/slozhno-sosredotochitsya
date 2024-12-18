@@ -1,18 +1,43 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-size: 1.125em;
-  font-family: IBM Plex Mono;
-  color: var(--accent-color);
-  background-image: url(../images/cover-image-dark.png);
-  background-attachment: fixed;
+	margin: 0 auto;
+	background-image: var(--background-image-black);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .header {
   display: grid;
   min-height: 41.75rem;
+  
 }
+.header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-top: 1px solid var(--accent-color, #ff0070);
+	border-right: 1px solid var(--accent-color, #ff0070);
+	right: 10px;
+	top: 10px;
+}
+.header::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-bottom: 1px solid var(--accent-color, #ff0070);
+	border-left: 1px solid var(--accent-color, #ff0070);
+	left: 10px;
+	bottom: 10px;
+}
+
 .header__theme-menu-button:hover {
   outline: 1px solid var(--accent-color);
 }
@@ -126,6 +151,7 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
+  color:var(--accent-color)
 }
 .main_how {
   padding-block-start: 50px;
